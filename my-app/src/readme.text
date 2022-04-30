@@ -1,0 +1,5 @@
+import react from react with the help of default import 
+
+import React from 'react'
+
+with the help of default import you can change the name but not with named import 
