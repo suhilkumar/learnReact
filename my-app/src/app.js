@@ -11,7 +11,10 @@ import react, {Component} from 'react'
 
 class App extends Component {
     render(){
-        return <h1>Create Component</h1>
+        // this is jsx code 
+        // return <h1>Create Component</h1>
+
+        return react.createElement('h1',null,'Suhil with react createElement' )
     }
 
 }
