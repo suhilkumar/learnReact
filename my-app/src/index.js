@@ -1,6 +1,5 @@
-import React, { createElement } from "react";
 import ReactDom from "react-dom";
-
+import element from "./app.js";
 // this is jsx code means html inside js
 // let element = <h1> Welcome to Sahosoft </h1>
 // ReactDom.render(
@@ -18,3 +17,4 @@ import ReactDom from "react-dom";
 // ReactDom.render(element1, document.getElementById("root"));
 
 
+ReactDom.render(element, document.getElementById("root"))
