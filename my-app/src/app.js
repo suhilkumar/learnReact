@@ -50,3 +50,10 @@
 // import React, { Fragment } from "react";
 // const element = (<Fragment><h1>suhil</h1><h2>whats up</h2></Fragment>);
 // export default element;
+
+// string interpolation using expression
+
+// import React from 'react'
+// let value = 20;
+// let element = <h1> React is {8+ value} times better </h1>
+// export default element;

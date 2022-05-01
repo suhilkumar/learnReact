@@ -29,9 +29,19 @@
 // let element = createElement("h1", null, "Suhil");
 // ReactDom.render(element, document.getElementById("root"));
 
-import App from './app.js'
-import ReactDom from 'react-dom'
+// import App from './app.js'
+// import ReactDom from 'react-dom'
 
-ReactDom.render(
-    <App/>,document.getElementById("root")
-)
+// ReactDom.render(
+//     <App/>,document.getElementById("root")
+// )
+
+// import  reactDom  from "react-dom";
+// import element from "./app.js";
+// reactDom.render(element, document.getElementById("root"));
+
+// using expression
+// import reactDom from 'react-dom'
+// import element from './app.js'
+
+// reactDom.render(element, document.getElementById("root"))
