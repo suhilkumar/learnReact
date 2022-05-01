@@ -1,11 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './index.css'
 
+
+let suhil = {
+    "fontFamily": 'Courier New',
+    "fontSize": "larger",
+    "color": "aqua"
+}
 let element = (
-  <div>
-    <h1 className="sahosoft" >Rucha</h1>
-  </div>
-);
+    <div>
+      <h1 style = {suhil} >Rucha</h1>
+      {/* to use a variable you have to use { } curly brackets*/}
+
+    </div>
+  );
+  
 
 ReactDOM.render(element, document.getElementById("root"));
