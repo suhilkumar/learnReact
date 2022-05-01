@@ -1,19 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+let isShow = true;
 
-let suhil = {
-    "fontFamily": 'Courier New',
-    "fontSize": "larger",
-    "color": "aqua"
-}
-let element = (
-    <div>
-      <h1 style = {suhil} >Rucha</h1>
-      {/* to use a variable you have to use { } curly brackets*/}
+let element = isShow === true ? <div>
+    <h1>Suhil, its true!</h1>
+</div>: 'No Element';
 
-    </div>
-  );
-  
-
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById("root"))
