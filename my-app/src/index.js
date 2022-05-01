@@ -23,8 +23,15 @@
 // reactDom.render(<App />, document.getElementById('root'))
 
 // JSX
-import { createElement } from "react";
-import ReactDom from "react-dom";
+// import { createElement } from "react";
+// import ReactDom from "react-dom";
 
-let element = createElement("h1", null, "Suhil");
-ReactDom.render(element, document.getElementById("root"));
+// let element = createElement("h1", null, "Suhil");
+// ReactDom.render(element, document.getElementById("root"));
+
+import App from './app.js'
+import ReactDom from 'react-dom'
+
+ReactDom.render(
+    <App/>,document.getElementById("root")
+)

@@ -35,3 +35,16 @@
 
 // let element = createElement("h1", null, "Suhil")
 // ReactDom.render(element, document.getElementById("root"))
+
+import { Component, Fragment} from 'react'
+class App extends Component {
+    render(){
+        return(
+            <Fragment>
+                <h1>Hi Suhil</h1>
+                <h2>How are you ?</h2>
+            </Fragment>
+        )
+    }
+}
+export default App;
