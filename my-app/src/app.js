@@ -11,7 +11,7 @@
 
 // class App extends Component {
 //     render(){
-//         // this is jsx code 
+//         // this is jsx code
 //         // return <h1>Create Component</h1>
 //         // react.createElement(type{html tag}, props{css}, children{content, child tag html})
 //         return react.createElement('h1',{style:{color:'red'}},'Suhil with react createElement' )
@@ -20,8 +20,6 @@
 // }
 // export default App;
 
-
-
 // // JSX
 // import { createElement } from 'react';
 // import  ReactDom  from 'react-dom';
@@ -36,15 +34,19 @@
 // let element = createElement("h1", null, "Suhil")
 // ReactDom.render(element, document.getElementById("root"))
 
-import { Component, Fragment} from 'react'
-class App extends Component {
-    render(){
-        return(
-            <Fragment>
-                <h1>Hi Suhil</h1>
-                <h2>How are you ?</h2>
-            </Fragment>
-        )
-    }
-}
-export default App;
+// import { Component, Fragment} from 'react'
+// class App extends Component {
+//     render(){
+//         return(
+//             <Fragment>
+//                 <h1>Hi Suhil</h1>
+//                 <h2>How are you ?</h2>
+//             </Fragment>
+//         )
+//     }
+// }
+// export default App;
+
+// import React, { Fragment } from "react";
+// const element = (<Fragment><h1>suhil</h1><h2>whats up</h2></Fragment>);
+// export default element;
