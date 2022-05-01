@@ -7,7 +7,7 @@
 // To use this fragment you need to import fragment from react and its a named export
 // let element = <><h1>With fragment </h1> <h2>Hi Suhil</h2></>
 // export default element;
-import react, {Component} from 'react'
+// import react, {Component} from 'react'
 
 // class App extends Component {
 //     render(){
@@ -19,3 +19,19 @@ import react, {Component} from 'react'
 //     // its called props {style:{color:'red'}}
 // }
 // export default App;
+
+
+
+// // JSX
+// import { createElement } from 'react';
+// import  ReactDom  from 'react-dom';
+
+// let element = createElement("h1", null, "Suhil")
+// ReactDom.render(element, document.getElementById("root"))
+
+// // JSX
+// import { createElement } from 'react';
+// import  ReactDom  from 'react-dom';
+
+// let element = createElement("h1", null, "Suhil")
+// ReactDom.render(element, document.getElementById("root"))
