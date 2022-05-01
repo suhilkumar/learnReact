@@ -1,6 +1,10 @@
-import ReactDOM from 'react-dom';
-import App from './app';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-    <App />, document.getElementById("root")
-)
+let element = (
+  <div>
+    <h1 data-myattr="sahosoft" >Rucha</h1>
+  </div>
+);
+
+ReactDOM.render(element, document.getElementById("root"));
