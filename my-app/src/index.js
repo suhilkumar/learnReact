@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import './index.css'
 
 let element = (
   <div>
-    <h1 data-myattr="sahosoft" >Rucha</h1>
+    <h1 className="sahosoft" >Rucha</h1>
   </div>
 );
 
