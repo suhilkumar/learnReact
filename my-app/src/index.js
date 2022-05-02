@@ -1,28 +1,8 @@
 import React, { Component } from 'react'
 import reactDom from 'react-dom'
-
-  class Header extends Component {
-  render() {
-    return (
-      <div>Header</div>
-    )
-  }
-}
-  class Footer extends Component {
-  render() {
-    return (
-      <div>Footer</div>
-    )
-  }
-}
-
-  class Content extends Component {
-  render() {
-    return (
-      <div>Suhil content </div>
-    )
-  }
-}
+// if you want to import multiple file you can import in curly brackets with the help of ,
+import {Header, Content, Footer} from './app'
+  
 
   class Index extends Component {
   render() {
