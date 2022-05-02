@@ -1,10 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// HOW TO LOOP IN JSX 
+import React from "react";
+import ReactDOM from "react-dom";
 
-let isShow = true;
+const names = ["Suhil", "Rucha", "kirtan"]
 
-let element = isShow === true ? <div>
-    <h1>Suhil, its true!</h1>
-</div>: 'No Element';
-
-ReactDOM.render(element, document.getElementById("root"))
+const nameList = [];
+for(const [index, value] of names.entries()){
+    nameList.push(<li key={index}>{value}</li>);
+    
+}
+ReactDOM.render(<ul>{nameList}</ul>, document.getElementById("root"));
