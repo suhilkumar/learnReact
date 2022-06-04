@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Employee(props) {
+let Employee = (props) => {
+  //you can't change the value of props :  props.name= "Rucha"
   return (
     <div>
       <h2>your name is {props.name}</h2>
@@ -23,3 +24,5 @@ export default function Employee(props) {
     </div>
   );
 }
+
+export default Employee;

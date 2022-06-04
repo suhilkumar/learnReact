@@ -36,3 +36,5 @@ ReactDOM.render(
   funMsg = {(msg) => {return msg}}
   funSum = {(a,b) => {return a+b}}/>,  document.getElementById("root")
 );
+
+// ReactDOM.render(Employee, document.getElementById("root"))
