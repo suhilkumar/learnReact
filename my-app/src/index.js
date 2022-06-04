@@ -19,12 +19,19 @@ function Employee(props) {
       </h4>
       <h3> your info : {props.info.mobile}</h3>
       <h3> your info : {props.info.email}</h3>
+      {/* use parenthesis when you want to call the function  */}
+      <h3> function : {props.fun()}</h3>
+      <h3> function MSG : {props.funMsg("MESSAGE")}</h3>
+      <h3> function : {props.funSum(10,20)}</h3>
     </div>
   );
 }
 
 ReactDOM.render(
   <Employee name="Patel" age={32}
-  friend= {friends} info={studentInfo}/>,
-  document.getElementById("root")
+  friend= {friends} info={studentInfo}
+  fun = {() => {return "I am function"}}
+  // PARAMETERIZED FUNCTIONS
+  funMsg = {(msg) => {return msg}}
+  funSum = {(a,b) => {return a+b}}/>,  document.getElementById("root")
 );
