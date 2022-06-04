@@ -57,12 +57,7 @@ import ReactDOM from 'react-dom';
 
 
 // destructuring 2 way
-function Greeting (props){
-  const {name, age} = props;
-  return(
-    <p>Hi {name}, my age is {age}</p>
-  )
-}
+import Greeting from './app';
 function Index(){
   return(
     <>
