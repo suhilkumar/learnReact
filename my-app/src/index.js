@@ -1,74 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// // create a functional component
-// function Greeting(){
-//   return (
-//     <p>Hi Suhil,</p>
-//   )
-// }
 
-// // create another component and pass greeting component inside this component
-// function Index() {
-//   return (
-//     <div>
-//       <Greeting />
-//     </div>
-//   )
-// }
-
-// // render this component
-// ReactDOM.render(<Index/>, document.getElementById("root"))
-
-// above was not a recommended approach now we use props 
-
-// now we use props and pass arguments with props
-// You declare the values in parent component and pass in child components as props 
-
-// function Greeting (props){
-//   return(
-//     <p>Hi {props.name}, my age is {props.age}</p>
-//   )
-// }
-// function Index(){
-//   return(
-//     <>
-//     <Greeting name="Suhil" age="32" />
-//     <Greeting name="Rucha" age="27" />
-//     </>
-//   )
-// }
-// ReactDOM.render(<Index/>, document.getElementById("root"))
-
-// // Destructuring 1 way just write properties in curly brackets
-// function Greeting ({name,age}){
-//   return(
-//     <p>Hi {name}, my age is {age}</p>
-//   )
-// }
-// function Index(){
-//   return(
-//     <>
-//     <Greeting name="Suhil" age="32" />
-//     <Greeting name="Rucha" age="27" />
-//     </>
-//   )
-// }
-// ReactDOM.render(<Index/>, document.getElementById("root"))
-
-
-// destructuring 2 way
-function Greeting (props){
-  const {name, age} = props;
-  return(
-    <p>Hi {name}, my age is {age}</p>
-  )
+class Parent extends Component{
+  render(){
+    return(
+      <div>
+        <h2>You are inside parent component</h2>
+        <Child name="suhil"></Child>
+      </div>
+    )
+  }
 }
-function Index(){
-  return(
-    <>
-    <Greeting name="Suhil" age="32" />
-    <Greeting name="Rucha" age="27" />
-    </>
-  )
+
+class Child extends Component{
+  render(){
+    return(
+      <div>
+        <h2>You are inside Child component</h2>
+        <p>author is {this.props.name}</p>
+      </div>
+    )
+  }
 }
-ReactDOM.render(<Index/>, document.getElementById("root"))
+ReactDOM.render(<Parent/>, document.getElementById("root"))
