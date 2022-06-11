@@ -1,54 +1,48 @@
-// import React, { Component } from "react";
-// import ReactDOM from "react-dom";
+// it is private to that component
+// we can create state 2 ways 
 
-// If you want to apply checkers in props you use propstype
-// SAMPLE FUNCTION COMPONENT
-// function Sidebar(props) {
-//   return <div> {props.children}</div>;
-// }
+// state without constructor
 
-// ReactDOM.render(
-//   <Sidebar>
-//     <nav>
-//       <a href='#'> Home </a>
-//       <a href='#'> About </a>
-//       <a href='#'> Content</a>
-//     </nav>
-//   </Sidebar>,
-//   document.getElementById("root")
-// );
-
-// PROPS TYPE
-
-// import propTypes from "prop-types";
-
-// Emp.propTypes = {
-//     name: propTypes.string,
-// }
-// function Emp(props) {
-//   return (
-//     <div>
-//       <h2>Hello, {props.name}</h2>
-//       <h3>age: {props.age}</h3>
-//     </div>
-//   );
-// }
-
-// ReactDOM.render(<Emp name="Suhil" age={29}/>, document.getElementById("root"));
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types'
 
-class Emp extends Component{
-    render(){
-        return(
-            <div>
-                <h1>Hello, {this.props.name}</h1>
-            </div>
-        )
+// export default class Index extends Component {
+//   state ={
+//       name: "Ajeet Singh",
+//       age : 29
+//   }
+  
+//     render() {
+//     return (
+//       <>
+//       <p> Name: {this.state.name}</p>
+//       <p> age : {this.state.name}</p>
+//       </>
+//     )
+//   }
+// }
+
+// ReactDOM.render(<Index/>, document.getElementById('root'))
+
+// state with constructor
+
+// if you just want to display the properties then you don't have to use state
+export default class Index extends Component {
+    constructor(){
+        super()
+        this.state = {
+        name: "Ajeet Singh",
+        age : 29
+        }
     }
-}
-Emp.propType = {
-    name : PropTypes.string.isRequired
-}
-ReactDOM.render(<Emp />, document.getElementById("root"))
+      render() {
+      return (
+        <>
+        <p> Name: {this.state.name}</p>
+        <p> age : {this.state.name}</p>
+        </>
+      )
+    }
+  }
+  
+  ReactDOM.render(<Index/>, document.getElementById('root'))
