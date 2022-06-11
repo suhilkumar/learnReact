@@ -49,31 +49,70 @@ import ReactDOM from "react-dom";
 
 
 // make changes with the help of setState()
+// export default class Index extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       name: "Ajeet Singh",
+//       age: 29,
+//     };
+//   }
+
+//   changeData(){
+//     //   this.setState we use to update the value of state
+//       this.setState({
+//           name : "Suhil"
+//       })
+//   }
+//   render() {
+//     return (
+//       <>
+//       {/* create a button and apply onclick event thats the syntax for creating events */}
+//       <button type="button" onClick={() => this.changeData()} >Update</button>
+//         <p> Name: {this.state.name}</p>
+//         <p> age : {this.state.age}</p>
+//       </>
+//     );
+//   }
+// }
+
+// ReactDOM.render(<Index />, document.getElementById("root"));
+
+
+
+// add props in state 
 export default class Index extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "Ajeet Singh",
-      age: 29,
-    };
-  }
+    // Note you must have to use props in constructor to read the props in state
+    constructor(props) {
+      super(props);
+      this.state = {
+        name: "Ajeet Singh",
+        age: 29,
+        email: this.props.email
+      };
+    }
+  
+    changeData(){
+      //   this.setState we use to update the value of state
+        this.setState({
+            name : "Suhil",
+            age: 32,
+            email: "suhil.patel009@gmail.com"
+        })
+    }
+    render() {
+      return (
+        <>
+        {/* create a button and apply onclick event thats the syntax for creating events */}
+        <button type="button" onClick={() => this.changeData()} >Update</button>
+          <p> Name: {this.state.name}</p>
+          <p> age : {this.state.age}</p>
+          <p> email: {this.state.email}</p>
 
-  changeData(){
-    //   this.setState we use to update the value of state
-      this.setState({
-          name : "Suhil"
-      })
+        </>
+      );
+    }
   }
-  render() {
-    return (
-      <>
-      {/* create a button and apply onclick event thats the syntax for creating events */}
-      <button type="button" onClick={() => this.changeData()} >Update</button>
-        <p> Name: {this.state.name}</p>
-        <p> age : {this.state.age}</p>
-      </>
-    );
-  }
-}
-
-ReactDOM.render(<Index />, document.getElementById("root"));
+  
+  ReactDOM.render(<Index  email="abc@gmail.com"/>, document.getElementById("root"));
+  
