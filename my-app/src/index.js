@@ -81,38 +81,69 @@ import ReactDOM from "react-dom";
 
 
 // add props in state 
-export default class Index extends Component {
+// export default class Index extends Component {
     // Note you must have to use props in constructor to read the props in state
-    constructor(props) {
-      super(props);
-      this.state = {
-        name: "Ajeet Singh",
-        age: 29,
-        email: this.props.email
-      };
-    }
+//     constructor(props) {
+//       super(props);
+//       this.state = {
+//         name: "Ajeet Singh",
+//         age: 29,
+//         email: this.props.email
+//       };
+//     }
   
-    changeData(){
-      //   this.setState we use to update the value of state
-        this.setState({
-            name : "Suhil",
-            age: 32,
-            email: "suhil.patel009@gmail.com"
-        })
-    }
-    render() {
-      return (
-        <>
-        {/* create a button and apply onclick event thats the syntax for creating events */}
-        <button type="button" onClick={() => this.changeData()} >Update</button>
-          <p> Name: {this.state.name}</p>
-          <p> age : {this.state.age}</p>
-          <p> email: {this.state.email}</p>
+//     changeData(){
+//       //   this.setState we use to update the value of state
+//         this.setState({
+//             name : "Suhil",
+//             age: 32,
+//             email: "suhil.patel009@gmail.com"
+//         })
+//     }
+//     render() {
+//       return (
+//         <>
+//         {/* create a button and apply onclick event thats the syntax for creating events */}
+//         <button type="button" onClick={() => this.changeData()} >Update</button>
+//           <p> Name: {this.state.name}</p>
+//           <p> age : {this.state.age}</p>
+//           <p> email: {this.state.email}</p>
 
-        </>
-      );
+//         </>
+//       );
+//     }
+//   }
+  
+//   ReactDOM.render(<Index  email="abc@gmail.com"/>, document.getElementById("root"));
+  
+// EXAMPLE WITH ADDING A COUNTER
+ class Index extends Component{
+    
+    state ={
+        name: "Ajeet Kumar",
+        rollNo : 102,
+        email : this.props.email,
+        counter : 1,
     }
-  }
-  
-  ReactDOM.render(<Index  email="abc@gmail.com"/>, document.getElementById("root"));
-  
+
+changeData(){
+    this.setState ( {
+        name : "Suhil",
+        rollNo : 1,
+        email : "suhil.patel009@gmail.com",
+        counter : this.state.counter +1 ,
+    })
+}
+    render(){
+        return(
+        <div>
+            <p> My name is {this.state.name}</p>
+            <p> My rollNo is {this.state.rollNo}</p>
+            <p> My email is {this.state.email}</p>
+            <p> Counter is {this.state.counter}</p>
+            <button type="button" onClick={()=> this.changeData()}>Update</button>
+        </div>
+    )}
+}
+
+ReactDOM.render(<Index email="abc@gmail.com"/>, document.getElementById("root"))
