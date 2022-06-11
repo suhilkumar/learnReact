@@ -114,48 +114,48 @@ import ReactDOM from "react-dom";
 //   ReactDOM.render(<Index  email="abc@gmail.com"/>, document.getElementById("root"));
 
 // EXAMPLE WITH ADDING A COUNTER
-class Index extends Component {
-  state = {
-    name: "Ajeet Kumar",
-    rollNo: 102,
-    email: "suhil.patel009@gmail.com",
-    counter: 1,
-  };
+// class Index extends Component {
+//   state = {
+//     name: "Ajeet Kumar",
+//     rollNo: 102,
+//     email: "suhil.patel009@gmail.com",
+//     counter: 1,
+//   };
 
-  // changeData(){
-  //     this.setState ( {
-  //         name : "Suhil",
-  //         rollNo : 1,
-  //         email : "suhil.patel009@gmail.com",
-  //         counter : this.state.counter +1 , //It's not a right approach
-  //     })
-  // }
+//   // changeData(){
+//   //     this.setState ( {
+//   //         name : "Suhil",
+//   //         rollNo : 1,
+//   //         email : "suhil.patel009@gmail.com",
+//   //         counter : this.state.counter +1 , //It's not a right approach
+//   //     })
+//   // }
 
-  // this is the right approach
-  changeData = () => {
-    this.setState((state, props) => ({
-      name: "rucha",
-      counter: state.counter + 1,
-      email: props.email + " updated " + 1,
-    }));
-  };
+//   // this is the right approach
+//   changeData = () => {
+//     this.setState((state, props) => ({
+//       name: "rucha",
+//       counter: state.counter + 1,
+//       email: props.email + " updated " + 1,
+//     }));
+//   };
 
-  render() {
-    return (
-      <div>
-        <p> My name is {this.state.name}</p>
-        <p> My rollNo is {this.state.rollNo}</p>
-        <p> My email is {this.state.email}</p>
-        <p> Counter is {this.state.counter}</p>
-        <button type="button" onClick={() => this.changeData()}>
-          Update
-        </button>
-      </div>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div>
+//         <p> My name is {this.state.name}</p>
+//         <p> My rollNo is {this.state.rollNo}</p>
+//         <p> My email is {this.state.email}</p>
+//         <p> Counter is {this.state.counter}</p>
+//         <button type="button" onClick={() => this.changeData()}>
+//           Update
+//         </button>
+//       </div>
+//     );
+//   }
+// }
 
-ReactDOM.render(
-  <Index email="abc@gmail.com" />,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <Index email="abc@gmail.com" />,
+//   document.getElementById("root")
+// );
