@@ -37,3 +37,20 @@ import ReactDOM from "react-dom";
 //   }
 // }
 // ReactDOM.render(<Index />, document.getElementById("root"));
+
+// Example of creating a url and alert message
+// function showMsg(e){
+//     // sythentic events arr used for stopping the url 
+//     e.preventDefault();
+//     alert("Hi Rucha learning events in react")
+// }
+
+// function Index (){
+//     return(
+//         <>
+//         <a href="google.com" onClick={showMsg}>click</a>
+//         </>
+//     )
+// }
+
+// ReactDOM.render(<Index/>,document.getElementById("root"))
