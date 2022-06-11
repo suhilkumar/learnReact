@@ -126,14 +126,26 @@ import ReactDOM from "react-dom";
         counter : 1,
     }
 
-changeData(){
-    this.setState ( {
-        name : "Suhil",
-        rollNo : 1,
-        email : "suhil.patel009@gmail.com",
-        counter : this.state.counter +1 ,
-    })
+// changeData(){
+//     this.setState ( {
+//         name : "Suhil",
+//         rollNo : 1,
+//         email : "suhil.patel009@gmail.com",
+//         counter : this.state.counter +1 , //It's not a right approach
+//     })
+// }
+
+
+// this is the right approach
+changeData = () => {
+    this.setState((state) => ({
+        name : "rucha",
+        counter: state.counter + 1
+    }))
 }
+
+
+
     render(){
         return(
         <div>
