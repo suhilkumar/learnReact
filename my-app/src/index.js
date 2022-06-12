@@ -1,22 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+//  && operator
 
-// Composing Component
+import React from "react";
+import ReactDOM from "react-dom";
 
-function Welcome(props){
-    return (
-        <h1>Hello, {props.name}</h1>
-    )
+function Index() {
+  return <>{ (5>2) && alert("Hi Suhil")}</>;
+//   if 5 is grater then 2 and then only alert function will execute
+// if left side condition is true then after && it executes
 }
 
-function Index(){
-    return (
-        <>
-        <Welcome name="Suhil" />
-        <Welcome name="Arpil" />
-        
-        </>
-    )
-}
-
-ReactDOM.render(<Index/>, document.getElementById("root"))
+ReactDOM.render(<Index />, document.getElementById("root"));
