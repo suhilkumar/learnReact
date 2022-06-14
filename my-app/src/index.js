@@ -1,33 +1,25 @@
-//  && operator
-
 import React from "react";
 import ReactDOM from "react-dom";
-
-// function Index() {
-//   return <>{ (5>2) && alert("Hi Suhil")}</>;
-// //   if 5 is grater then 2 and then only alert function will execute
-// // if left side condition is true then after && it executes
+const people = [{ name: "Suhil" }, { name: "Rucha" }, { name: "Kirtan" }];
+// regular map
+// function Index(){
+//   return(
+//     <>
+//     {
+//       people.map(person => <p key={person.name}>{person.name}</p>)
+//     }
+//     </>
+//   )
 // }
-
-// ReactDOM.render(<Index />, document.getElementById("root"));
-
-function MailBox(props) {
-  const unReadMsg = props.unReadMessage;
-
+function Index() {
   return (
     <>
-      <h1> Inbox</h1>
-
-      {
-      unReadMsg.length > 0 && <h2> you have {unReadMsg.length} unread message</h2>
-      }
+      {people.map((person) => {
+        // if you use curly brackets then you have to use return
+        return <p key={person.name}>{person.name}</p>;
+      })}
     </>
   );
 }
 
-const Message = ["suhil", "Rucha"];
-
-ReactDOM.render(
-  <MailBox unReadMessage={Message} />,
-  document.getElementById("root")
-);
+ReactDOM.render(<Index />, document.getElementById("root"));
