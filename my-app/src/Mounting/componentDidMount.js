@@ -30,11 +30,6 @@ export default class Index extends Component {
       this.setState({ name: "rucha" });
     }, 1000);
   }
-
-  changeName = () => {
-    this.setState({ name: "Rucha" });
-  };
-
   // this is mandatory
   render() {
     console.log("render is called");
@@ -42,9 +37,6 @@ export default class Index extends Component {
       <>
         <div>My name is {this.state.name}</div>
         <div>My age is {this.state.age}</div>
-        <button type="button" onClick={this.changeName}>
-          change
-        </button>
       </>
     );
   }
