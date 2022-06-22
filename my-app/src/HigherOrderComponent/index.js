@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import App from './HigherOrderComponent/app'
+import App from './app'
 import ReactDOM from 'react-dom';
 
 export default class Index extends Component {
