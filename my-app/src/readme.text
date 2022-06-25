@@ -1,0 +1,17 @@
+it is a 3rd party application 
+the main reason for redux is to pass data from one component to another where 
+there is no connection between 1 component to another.
+
+its sole purpose to use state management in React its better then flux 
+its provided by a 3rd party to overcome flux 
+
+
+you have to follow its principal to understand 
+it is an open source javascript used to manage application state
+
+react redux is the official react binding for redux . 
+it allows react component to read data from a redux store 
+
+dispatch actions to store to update data, usually redux data are read only.
+
+ 
