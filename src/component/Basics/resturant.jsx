@@ -3,6 +3,10 @@ import './style.css'
 import Menu from "./menuApi"
 import MenuCard from './MenuCard'
 
+const uniqueList = [...new Set(Menu.map((curElem) => {
+    return curElem.category
+}))]
+console.log(uniqueList)
 
 export const Resturant = () => {
     const [menuData, setMenuData] = useState(Menu)
