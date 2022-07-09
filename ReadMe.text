@@ -1,0 +1,8 @@
+
+
+To downgrade react version 
+{from latest version to 17.0.2}
+go inside that project 
+in your terminal 
+npm install -save react@17.0.2 react-dom@17.0.2
+
