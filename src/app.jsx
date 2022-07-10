@@ -1,11 +1,11 @@
 import React from 'react'
 import {Resturant } from './component/Basics/resturant'
-import UseState from './component/hooks/UseState'
+import UseReducer from './component/hooks/UseReducer'
 
 export  const App = () => {
     return ( 
         <div>
-        <UseState/>
+        <UseReducer/>
         </div>
     )
 }
